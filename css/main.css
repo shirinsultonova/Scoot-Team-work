@@ -283,6 +283,117 @@
 
 
 
+/* offer section start  */
+
+.offer {
+  padding-top: 160px;
+  padding-bottom: 200px;
+}
+
+
+
+.offer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  
+}
+
+.offer__item::before {
+  display: block;
+  content: "";
+  width: 974px;
+  border: 5px solid #E5ECF4;
+  z-index: -1;
+  position: absolute;
+  top: 56px;
+  right: 271px;
+  background-color: var(--light-gray-color);
+}
+
+.offer__item {
+  padding-top: 136px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.offer__item:last-child {
+  margin-right: 0;
+}
+
+.offer__locate {
+  position: absolute;
+  bottom: 188px;
+  left: 0px;
+  width: 96px;
+  height: 96px;
+  background-image: url("../images/home-locate.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--yellow-color);
+  border-radius: 50%;
+}
+
+.offer__scooter {
+  position: absolute;
+  bottom: 188px;
+  left: 0px;
+  width: 96px;
+  height: 96px;
+  background-image: url("../images/home-scooter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--yellow-color);
+  border-radius: 50%;
+}
+
+.offer__ride {
+  position: absolute;
+  bottom: 188px;
+  left: 0px;
+  width: 96px;
+  height: 96px;
+  background-image: url("../images/home-ride.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--yellow-color);
+  border-radius: 50%;
+}
+
+.offer__topic {
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.offer__link {
+  font-family: "Space Mono";
+  font-weight: var(--main-font-weight);
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: var(--dark-navy-color);
+  text-decoration: none;
+}
+
+.offer__text {
+  margin: 0;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--dim-gray-color);
+}
+
+/* offer section finish  */
+
+
 
 
 
