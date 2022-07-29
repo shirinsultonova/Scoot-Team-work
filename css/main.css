@@ -330,6 +330,7 @@ only screen and (                min-resolution: 2dppx) {
 
 /* start faq section */
 .faq{
+  padding-top: 120px;
   
 }
 .faq__title{
