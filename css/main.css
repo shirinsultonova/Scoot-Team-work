@@ -1,6 +1,13 @@
 /* VARIABLES */
 
 :root {
+
+  --yellow-color: #FCB72B;
+  --dark-navy-color: #495567;
+  --dim-gray-color: #939CAA;
+  --light-gray-color: #E5ECF4;
+  --snow-color: #F2F5F9;
+  --light-yellow-color: #FFF4DF;
   --yellow-color: #fcb72b;
   --dark-navy-color: #495567;
   --dim-gray-color: #939caa;
@@ -16,17 +23,31 @@
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 700;
+
+  src: 
+  url("../fonts/space-mono-v11-latin-700.woff2") format("woff2"),
+  url("../fonts/space-mono-v11-latin-700.woff") format("woff");
+}
+
+
+
   src: url("../fonts/space-mono-v11-latin-700.woff2") format("woff2"),
     url("../fonts/space-mono-v11-latin-700.woff") format("woff");
 }
+
 
 /* lexend-deca-regular - latin */
 @font-face {
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 400;
+
+  src: 
+  url("../fonts/lexend-deca-v17-latin-regular.woff2") format("woff2"),
+  url("../fonts/lexend-deca-v17-latin-regular.woff") format("woff"); 
   src: url("../fonts/lexend-deca-v17-latin-regular.woff2") format("woff2"),
     url("../fonts/lexend-deca-v17-latin-regular.woff") format("woff");
+
 }
 
 /* GENERAL */
@@ -52,6 +73,9 @@ body {
   font-family: "Space Mono", "Courier New", monospace;
   overflow-x: hidden;
 }
+
+
+
 
 .visually-hidden {
   position: absolute;
@@ -81,6 +105,7 @@ body {
 .site-main {
   flex-grow: 1;
 }
+
 
 /* header start */
 .site-header {
@@ -784,6 +809,242 @@ body {
 
 
 
+/* ABOUT PAGE START */
+.about{
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  background-image: url("../images/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  
+  .about{
+    background-image: url("../images/about-bg@2x.jpg");
+  }
+  .mobility__img-box{
+    
+  }
+}
+.about__title{
+  margin: 0;
+  padding-top: 62px;
+  padding-bottom: 62px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+}
+
+.mobility{
+  position: relative;
+  margin: 0;
+}
+.mobility::after{
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../images/mobility-strelka.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: calc(50% - 235px);
+  left: calc(50% + 68px);
+  width: 734px;
+  height: 99px;
+  
+}
+.mobility::before{
+  position: absolute;
+  z-index: 1;
+  content: "";
+  display: block;
+  background-image: url("../images/better-urban-strelka.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: calc(50% + 146px);
+  left: calc(50% - 883px);
+  width: 734px;
+  height: 99px;
+  
+}
+.mobility__wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.mobility__text-box{
+  padding-top: 250px;
+  padding-bottom: 202px;
+  width: 445px;
+  
+}
+.mobility__title{
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  
+}
+.mobility__text{
+  padding-top: 24px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  
+}
+.mobility__img-box{
+  position: relative;
+  
+}
+.mobility__img{
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  
+}
+.mobility__img-box::after{
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../images/mobility-circle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0px;
+  right: -561px;
+  width: 445px;
+  height: 445px;
+}
+.mobility__img-box-second{
+  position: relative;
+}
+.mobility__img-second{
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  
+}
+.mobility__img-box-second::before{
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../images/mobility-circle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0px;
+  right: 561px;
+  width: 445px;
+  height: 445px;
+}
+
+/* start faq section */
+.faq{
+  padding-top: 120px;
+  
+}
+.faq__title{
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  
+}
+.faq__wrap{
+  padding-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.faq__wrap:last-child{
+  padding-bottom: 160px;
+}
+.faq__new-title{
+  padding-top: 10px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.78571px;
+  color: #495567;
+  
+}
+.detsum{
+  
+}
+.detsum__list{
+  padding-left: 0;
+  
+}
+.detsum__item{
+  list-style: none;
+  
+}
+.detsum__item:nth-child(2){
+  padding-top: 16px;
+  padding-bottom: 16px;
+  
+}
+.detsum__det{
+  padding: 32px 0px 32px 40px;
+  width: 730px;
+  background: #F2F5F9;
+  
+  
+}
+
+.detsum__det[open] .detsum__arrow{
+  transform: rotateX(180deg);
+
+}
+.detsum__sum{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+  
+}
+.detsum__arrow{
+  padding-right: 42px;
+  transition: 0.5s;
+}
+
+
+.detsum__text{
+  margin: 0;
+  padding: 24px 40px 10px 0px;
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #495567;
+  
+}
+
+
+
+
+
+/* ABOUT SECTION END */
 
 
 /* footer start */
