@@ -30,13 +30,6 @@
 }
 
 
-
-  src: url("../fonts/space-mono-v11-latin-700.woff2") format("woff2"),
-    url("../fonts/space-mono-v11-latin-700.woff") format("woff");
-}
-
-
-/* lexend-deca-regular - latin */
 @font-face {
   font-family: "Lexend Deca";
   font-style: normal;
@@ -250,6 +243,7 @@ body {
   font-size: 15px;
   line-height: 25px;
   color: #939caa;
+  font-family: 'Lexend Deca', "Arial", sans-serif;
 }
 .our__link {
   padding: 11px 50px;
@@ -343,6 +337,7 @@ body {
   line-height: 25px;
   text-align: center;
   color: #939caa;
+  font-family: 'Lexend Deca', "Arial", sans-serif;
 }
 
 .jobs {
@@ -373,6 +368,7 @@ body {
 }
 .text-box__text {
   margin: 0;
+  font-family: 'Lexend Deca', "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
@@ -830,9 +826,6 @@ only screen and (                min-resolution: 2dppx) {
   .about{
     background-image: url("../images/about-bg@2x.jpg");
   }
-  .mobility__img-box{
-    
-  }
 }
 .about__title{
   margin: 0;
@@ -853,15 +846,16 @@ only screen and (                min-resolution: 2dppx) {
   position: absolute;
   content: "";
   display: block;
-  background-image: url("../images/mobility-strelka.svg");
+  background-image: url(../images/mobility-strelka.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  top: calc(50% - 235px);
-  left: calc(50% + 68px);
-  width: 734px;
-  height: 99px;
-  
+  top: calc(50% - 275px);
+  left: calc(50% + 14px);
+  width: 770px;
+  height: 145px;
 }
+  
+
 .mobility::before{
   position: absolute;
   z-index: 1;
@@ -899,6 +893,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 .mobility__text{
   padding-top: 24px;
+  font-family: 'Lexend Deca', "Arial", sans-serif;
   margin: 0;
   font-weight: 400;
   font-size: 15px;
@@ -924,7 +919,7 @@ only screen and (                min-resolution: 2dppx) {
   background-repeat: no-repeat;
   background-size: contain;
   top: 0px;
-  right: -561px;
+  right: -500px;
   width: 445px;
   height: 445px;
 }
@@ -945,7 +940,7 @@ only screen and (                min-resolution: 2dppx) {
   background-repeat: no-repeat;
   background-size: contain;
   top: 0px;
-  right: 561px;
+  right: 540px;
   width: 445px;
   height: 445px;
 }
@@ -982,10 +977,7 @@ only screen and (                min-resolution: 2dppx) {
   line-height: 48px;
   letter-spacing: -1.78571px;
   color: #495567;
-  
-}
-.detsum{
-  
+
 }
 .detsum__list{
   padding-left: 0;
@@ -993,7 +985,9 @@ only screen and (                min-resolution: 2dppx) {
 }
 .detsum__item{
   list-style: none;
-  
+}
+.detsum__det:hover{
+  background-color: #FFF4DF;
 }
 .detsum__item:nth-child(2){
   padding-top: 16px;
@@ -1032,7 +1026,7 @@ only screen and (                min-resolution: 2dppx) {
 .detsum__text{
   margin: 0;
   padding: 24px 40px 10px 0px;
-  font-family: 'Lexend Deca';
+  font-family: 'Lexend Deca', "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
