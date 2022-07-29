@@ -1,93 +1,93 @@
 /* VARIABLES */
 
 :root {
-    --yellow-color: #FCB72B;
-    --dark-navy-color: #495567;
-    --dim-gray-color: #939CAA;
-    --light-gray-color: #E5ECF4;
-    --snow-color: #F2F5F9;
-    --light-yellow-color: #FFF4DF;
-    --white-color: #fff;
-    --main-font-weight: 700;
-  }
+  --yellow-color: #FCB72B;
+  --dark-navy-color: #495567;
+  --dim-gray-color: #939CAA;
+  --light-gray-color: #E5ECF4;
+  --snow-color: #F2F5F9;
+  --light-yellow-color: #FFF4DF;
+  --white-color: #fff;
+  --main-font-weight: 700;
+}
 
-  /* space-mono-700 - latin */
+/* space-mono-700 - latin */
 @font-face {
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 700;
-    src: 
-         url("../fonts/space-mono-v11-latin-700.woff2") format("woff2"),
-         url("../fonts/space-mono-v11-latin-700.woff") format("woff");
-  }
-  
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: 
+  url("../fonts/space-mono-v11-latin-700.woff2") format("woff2"),
+  url("../fonts/space-mono-v11-latin-700.woff") format("woff");
+}
 
- 
-  /* lexend-deca-regular - latin */
+
+
+/* lexend-deca-regular - latin */
 @font-face {
-    font-family: "Lexend Deca";
-    font-style: normal;
-    font-weight: 400;
-    src: 
-         url("../fonts/lexend-deca-v17-latin-regular.woff2") format("woff2"),
-         url("../fonts/lexend-deca-v17-latin-regular.woff") format("woff"); 
-  }
-  
-  /* GENERAL */
-  * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-  html {
-    height: 100%;
-  }
-  
-  img {
-    display: block;
-    height: auto;
-  }
-  
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: "Lexend Deca", "Arial", sans-serif;
-    font-family: "Space Mono", "Courier New", monospace;
-    overflow-x: hidden;
-  }
-  
-  
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  
-  /* CONTAINER */
-  
-  .container {
-    max-width: 1150px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  
-  /* STICKY-FOOTER */
-  .site-main {
-    flex-grow: 1;
-  }
- 
-    
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: 
+  url("../fonts/lexend-deca-v17-latin-regular.woff2") format("woff2"),
+  url("../fonts/lexend-deca-v17-latin-regular.woff") format("woff"); 
+}
+
+/* GENERAL */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", "Arial", sans-serif;
+  font-family: "Space Mono", "Courier New", monospace;
+  overflow-x: hidden;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+
+.container {
+  max-width: 1150px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* STICKY-FOOTER */
+.site-main {
+  flex-grow: 1;
+}
+
+
 /* header start */
 .site-header {
   padding: 22px 0;
@@ -187,6 +187,150 @@
 
 
 
+/* ABOUT PAGE START */
+.about{
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  background-image: url("../images/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  
+  .about{
+    background-image: url("../images/about-bg@2x.jpg");
+  }
+  .mobility__img-box{
+    
+  }
+}
+.about__title{
+  margin: 0;
+  padding-top: 62px;
+  padding-bottom: 62px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+}
+
+.mobility{
+  position: relative;
+  margin: 0;
+}
+.mobility::after{
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../images/mobility-strelka.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: calc(50% - 235px);
+  left: calc(50% + 68px);
+  width: 734px;
+  height: 99px;
+  
+}
+.mobility::before{
+  position: absolute;
+  z-index: 1;
+  content: "";
+  display: block;
+  background-image: url("../images/better-urban-strelka.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: calc(50% + 146px);
+  left: calc(50% - 883px);
+  width: 734px;
+  height: 99px;
+  
+}
+.mobility__wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.mobility__text-box{
+  padding-top: 250px;
+  padding-bottom: 202px;
+  width: 445px;
+  
+}
+.mobility__title{
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  
+}
+.mobility__text{
+  padding-top: 24px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  
+}
+.mobility__img-box{
+  position: relative;
+  
+}
+.mobility__img{
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  
+}
+.mobility__img-box::after{
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../images/mobility-circle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0px;
+  right: -561px;
+  width: 445px;
+  height: 445px;
+}
+.mobility__img-box-second{
+  position: relative;
+}
+.mobility__img-second{
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  
+}
+.mobility__img-box-second::before{
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../images/mobility-circle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0px;
+  right: 561px;
+  width: 445px;
+  height: 445px;
+}
+
+
+
+/* ABOUT SECTION END */
 
 
 /* footer start */
